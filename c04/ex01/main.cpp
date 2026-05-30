@@ -9,7 +9,7 @@ int main()
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 	
-	delete j;  // Should not leak
+	delete j;
 	delete i;
 	
 	std::cout << "\n========== PART 2: Array of Animals ==========" << std::endl;
@@ -29,7 +29,7 @@ int main()
 	original.setIdea(1, "Chase the mailman");
 	
 	std::cout << "\n--- Copying Dog ---" << std::endl;
-	Dog copy(original);  // Deep copy
+	Dog copy(original);
 	
 	std::cout << "\nOriginal ideas: " << original.getIdea(0) << ", " << original.getIdea(1) << std::endl;
 	std::cout << "Copy ideas: " << copy.getIdea(0) << ", " << copy.getIdea(1) << std::endl;
@@ -70,7 +70,7 @@ int main()
 	{
 		Dog localDog;
 		Cat localCat;
-	}  // Brains should be destroyed here
+	}
 	
 	return 0;
 }

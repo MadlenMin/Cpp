@@ -10,16 +10,13 @@ class Cat : public Animal
 		Brain* brain;
 		
 	public:
-		// Orthodox Canonical Form
 		Cat();
 		Cat(const Cat& other);
 		Cat& operator=(const Cat& other);
 		~Cat();
 		
-		// Override makeSound
 		void makeSound() const;
 		
-		// For testing deep copy
 		void setIdea(int index, const std::string& idea);
 		std::string getIdea(int index) const;
 };

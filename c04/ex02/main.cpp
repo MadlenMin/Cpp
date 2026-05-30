@@ -17,8 +17,8 @@ int main()
 	std::cout << "Cat type: " << cat->getType() << std::endl;
 	
 	std::cout << "\n--- Sounds (polymorphism still works) ---" << std::endl;
-	dog->makeSound();  // Woof!
-	cat->makeSound();  // Meow!
+	dog->makeSound();
+	cat->makeSound();
 	
 	std::cout << "\n--- Cleanup ---" << std::endl;
 	delete dog;

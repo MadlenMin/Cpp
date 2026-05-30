@@ -10,16 +10,13 @@ class Dog : public Animal
 		Brain* brain;
 		
 	public:
-		// Orthodox Canonical Form
 		Dog();
 		Dog(const Dog& other);
 		Dog& operator=(const Dog& other);
 		~Dog();
 		
-		// Override makeSound
 		void makeSound() const;
 		
-		// For testing deep copy
 		void setIdea(int index, const std::string& idea);
 		std::string getIdea(int index) const;
 };
